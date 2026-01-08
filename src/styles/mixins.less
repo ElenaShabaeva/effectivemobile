@@ -3,4 +3,33 @@
   max-width: 1500px;
   margin-inline: auto;
   padding-inline: 60px;
+
+  @media @1024{
+    padding-inline: 40px;
+  }
+
+  @media @576{
+    padding-inline: 20px;
+  }
+}
+
+.is-hidden {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(100%) !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+.flex(@display, @gap){
+  display: @display;
+  flex-direction: column;
+  row-gap: @gap;
 }
