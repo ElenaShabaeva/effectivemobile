@@ -12,6 +12,7 @@ export default defineConfig({
               @import "@/styles/variables.less";
               @import "@/styles/mixins.less";
               @import "@/styles/normalize.less";
+              @import "@/styles/common.less";
             `,
       },
     },
