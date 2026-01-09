@@ -1,0 +1,58 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: @light;
+  color: @dark;
+  font-family: @font;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5;
+  overflow-y: scroll;
+}
+
+input {
+  box-shadow: none;
+  outline: none;
+  color: @dark;
+  font-family: @font;
+  font-size: 14px;
+}
+
+input {
+  &::placeholder {
+    color: @gray-2;
+  }
+}
+
+input:focus-visible {
+  border-color: @blue;
+  &::placeholder {
+    color: transparent;
+  }
+}
+
+button {
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 2px dashed @purple;
+  outline-offset: 2px;
+}
