@@ -24,6 +24,13 @@ const props = defineProps({
   background-color: @light;
 
   &:hover {
+    @media (hover: hover) {
+      border-radius: 8px;
+      background-color: @gray-1;
+    }
+  }
+
+  &:active {
     background-color: @gray-1;
   }
 
@@ -33,6 +40,13 @@ const props = defineProps({
     color: @light;
 
     &:hover {
+      @media (hover: hover) {
+        border-radius: 8px;
+        background-color: @purple-1;
+      }
+    }
+
+    &:active {
       background-color: @purple-1;
     }
   }

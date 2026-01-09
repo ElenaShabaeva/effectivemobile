@@ -27,6 +27,12 @@ const props = defineProps({
   color: @dark;
 
   &:hover {
+    @media (hover: hover) {
+      background-color: @gray-1;
+    }
+  }
+
+  &:active {
     background-color: @gray-1;
   }
 
@@ -36,6 +42,12 @@ const props = defineProps({
     color: @light;
 
     &:hover {
+      @media (hover: hover) {
+        background-color: @purple-1;
+      }
+    }
+
+    &:active {
       background-color: @purple-1;
     }
   }
