@@ -10,7 +10,7 @@
             :inputName="'MovieName'"
             :placeholder="'Название фильма'"
           />
-          <my-button-s type="button" :filled="true" class="listing__btn">
+          <my-button-s type="button" :filled="true" class="listing__btn" aria-label="Поиск">
             <SvgSearch/>
           </my-button-s>
         </div>
