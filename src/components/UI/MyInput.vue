@@ -8,7 +8,7 @@
     >
     <input
       class="input__field"
-      :class="{'input__field--error': error}"
+      :class="{ 'input__field--error': error }"
       :id="inputName"
       :type="type"
       :placeholder="placeholder"
@@ -49,7 +49,7 @@ const props = defineProps({
     type: String,
     default: "text",
   },
-  placeholder: String
+  placeholder: String,
 });
 const emit = defineEmits(["update:modelValue", "blur"]);
 const updateInput = (event) => {
@@ -73,7 +73,9 @@ const updateInput = (event) => {
     transition: all 0.3s;
 
     &:hover {
-      border: 1px solid @blue;
+      @media (hover: hover) {
+        border: 1px solid @blue;
+      }
     }
 
     &--error {
