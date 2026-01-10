@@ -24,12 +24,14 @@
         <MovieCard class="listing__movie"/>
       </ul>
     </div>
+    <MovieInfo/>
   </div>
 </template>
 
 <script setup>
 import SvgSearch from "../assets/icons/SvgSearch.vue";
 import MovieCard from "./MovieCard.vue";
+import MovieInfo from "./MovieInfo.vue";
 </script>
 
 <style lang="less">
